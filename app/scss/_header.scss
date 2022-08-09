@@ -2,7 +2,7 @@
   position: static;
   top: 0;
   width: 100%;
-  z-index: 13;
+  z-index: 9;
 }
 
 .header-container {
@@ -892,7 +892,12 @@
     margin-bottom: 20px;
   }
 }
-
+body {
+  scrollbar-gutter: stable;
+}
+.tpk {
+  display: none;
+}
 .mobile-header {
   display: none;
   width: 100%;
@@ -935,6 +940,12 @@
   }
 }
 @media screen and (max-width: 700px) {
+  .header {
+    z-index: 13;
+  }
+  .tpk {
+    display: block;
+  }
   .preloader .dotsi div:nth-child(3) {
     margin-right: 0;
   }

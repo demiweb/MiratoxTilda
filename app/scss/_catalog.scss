@@ -608,7 +608,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 12;
+  z-index: 15;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -697,7 +697,7 @@
 }
 
 .modal-seminar-reg, .modal-call, .modal-cart {
-  z-index: 14;
+  z-index: 16;
 
   .close {
     position: absolute;
@@ -1441,7 +1441,7 @@
   right: 0;
   bottom: 0;
   background: #fff;
-  z-index: 14;
+  z-index: 18;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2949,6 +2949,9 @@ p.empty {
 }
 
 @media screen and (max-width: 525px) {
+  .modal-container {
+    width: 100%;
+  }
   .single-seminar {
     width: 100%;
     margin-right: 0;
